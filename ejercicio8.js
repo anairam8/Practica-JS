@@ -1,7 +1,7 @@
 /*Sumar un rango de numeros
 
 Escribir una función llamada sumarRango que reciba dos argumentos: número inicial y número final.
- La función debe retornar la suma de los números en ese rango (incluyéndolos).
+La función debe retornar la suma de los números en ese rango (incluyéndolos).
 
 Nota: puedes asumir que el número inicial va a ser menor o igual que el número final.
 */

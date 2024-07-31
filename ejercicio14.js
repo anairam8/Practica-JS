@@ -11,7 +11,6 @@ igual a la posición final, y que están dentro de los límites del arreglo.*/
 function sumarArreglo(arreglo, numInicial, numFinal){
     let resultado = 0;
     for(let i = numInicial; i <= numFinal; i++){ 
-        //Problema con los condicionales de menor o igual a numFinal.
         resultado += arreglo[i];
     }
     return resultado
@@ -21,4 +20,4 @@ function sumarArreglo(arreglo, numInicial, numFinal){
 // código de prueba
 console.log(sumarArreglo([1, 2, 3], 1, 2)) // 5
 console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3, 6)) // 22
-console.log(sumarArreglo([7, 8, 9], 0, 0)) // 0
+console.log(sumarArreglo([7, 8, 9], 0, 0)) // 7

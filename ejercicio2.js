@@ -5,7 +5,6 @@ edad e ingresos. Si edad es igual o mayor a 18 y los ingresos son iguales o mayo
 1000 debe retornar ingresos * 40%. De lo contrario retornar 0.*/
 
 function calcularImpuestos (edad, ingresos){
-    let impuestos = 0;
     if (edad >= 18 && ingresos >= 1000){
         return ingresos * 0.40;
     }
