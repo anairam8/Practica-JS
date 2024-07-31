@@ -9,7 +9,6 @@ de acuerdo a lo siguiente:
 Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.*/
 
 function fizzBuzz(numero){
-    
     if(numero % 3 == 0 && numero % 5 == 0){
         return "FizzBuzz";
     }
