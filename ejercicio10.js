@@ -1,21 +1,21 @@
 /*Numero de caracteres
 
-Escribir una función llamada numeroDeCaracteres que reciba un string y un caracter 
+Escribir una función llamada countCharacters que reciba un string y un caracter 
 (un string de un caracter). 
 La función debe retornar el número de veces que aparece el caracter en el string.
 */
 
-function numeroDeCaracteres(cadena, caracter) {
-    let totalCaracter = 0;
-    for (let i = 0; i < cadena.length; i++) {
-        if (cadena[i] === caracter) {
-            totalCaracter++;
-        }
+function countCharacters(word, character) {
+  let totalCharacters = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === character) {
+      totalCaracter++;
     }
-    return totalCaracter;
+  }
+  return totalCharacters;
 }
 
 // código de prueba
-console.log(numeroDeCaracteres("Hola Mundo", "o")) // 2
-console.log(numeroDeCaracteres("MMMMM", "m")) // 0
-console.log(numeroDeCaracteres("eeee", "e")) // 4
+console.log(countCharacters("Hola Mundo", "o")); // 2
+console.log(countCharacters("MMMMM", "m")); // 0
+console.log(countCharacters("eeee", "e")); // 4
