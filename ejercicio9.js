@@ -1,16 +1,16 @@
 // 9. Número de aes (letra "a")
-// Escribir una función llamada numeroDeAes que reciba un string y retorne el número de veces que aparece la letra "a"
+// Escribir una función llamada amountOfA que reciba un string y retorne el número de veces que aparece la letra "a"
 
-function numeroDeAes(cadena){
-    let contador = 0;
-    for(i=0; i < cadena.length; i++){
-        if(cadena[i] === "a" || cadena[i] === "A"){
-            contador++;
-        }
+function amountOfA(word) {
+  let counter = 0;
+  for (i = 0; i < word.length; i++) {
+    if (word[i] === "a" || word[i] === "A") {
+      counter++;
     }
-    return contador;
+  }
+  return counter;
 }
 
-console.log(numeroDeAes("abracadabra")) // 5
-console.log(numeroDeAes("etinol")) // 0
-console.log(numeroDeAes("")) // 0
+console.log(amountOfA("abracadabra")); // 5
+console.log(amountOfA("etinol")); // 0
+console.log(amountOfA("")); // 0

@@ -8,20 +8,16 @@ de acuerdo a lo siguiente:
 "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
 Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.*/
 
-function fizzBuzz(numero){
-    
-    if(numero % 3 == 0 && numero % 5 == 0){
-        return "FizzBuzz";
-    }
-    else if(numero % 5 == 0){
-        return "Buzz";
-    }
-    else if(numero % 3 == 0){
-        return "Fizz";
-    }
-    else{
-        return numero;
-    }
+function fizzBuzz(number) {
+  if (number % 3 == 0 && number % 5 == 0) {
+    return "FizzBuzz";
+  } else if (number % 5 == 0) {
+    return "Buzz";
+  } else if (number % 3 == 0) {
+    return "Fizz";
+  } else {
+    return number;
+  }
 }
 
 // código de prueba
