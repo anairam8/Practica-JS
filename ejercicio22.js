@@ -1,23 +1,22 @@
-/*Encontrar posiciones de números pares
+/*Encontrar findPositionsOfEvenNumbers de números pares
 
-Escribir una función llamada posiciones que reciba un arreglo de números
-y retorne un nuevo arreglo con las posiciones donde se encuentran números pares.*/
-function posiciones(arreglo) {
-    let arregloPar = [];
-    
-    for (let i = 0; i < arreglo.length; i++) {
-        if (arreglo[i] % 2 === 0) {
-            arregloPar.push(i);
-        }
+Escribir una función llamada findPositionsOfEvenNumbers que reciba un arreglo de números
+y retorne un nuevo arreglo con las findPositionsOfEvenNumbers donde se encuentran números pares.*/
+function findPositionsOfEvenNumbers(numbersList) {
+  let evenNumbersList = [];
+
+  for (let i = 0; i < numbersList.length; i++) {
+    if (numbersList[i] % 2 === 0) {
+      evenNumberList.push(i);
     }
+  }
 
-    return arregloPar;
+  return evenNumberList;
 }
 
 // Código de prueba
-console.log(posiciones([1, 2, 3, 4, 5, 6])); // [1, 3, 5]
-console.log(posiciones([])); // []
-
+console.log(findPositionsOfEvenNumbers([1, 2, 3, 4, 5, 6])); // [1, 3, 5]
+console.log(findPositionsOfEvenNumbers([])); // []
 
 /*Duplicar elementos de un arreglo.
 

@@ -1,15 +1,15 @@
-// 21. Encontrar números pares en un arreglo
-// Escribir una función llamada pares que reciba un arreglo de números y retorne un nuevo arreglo con los números pares únicamente.
+// 21. Encontrar números findEvenNumbers en un arreglo
+// Escribir una función llamada findEvenNumbers que reciba un arreglo de números y retorne un nuevo arreglo con los números findEvenNumbers únicamente.
 
-function pares(numeros){
-    let pares=[];
-    for(i=0;i<numeros.length;i++){
-        if(numeros[i] % 2 == 0){
-            pares.push(numeros[i]);
-        }
+function findEvenNumbers(numbersList) {
+  let evenNumbers = [];
+  for (i = 0; i < numbersList.length; i++) {
+    if (numbersList[i] % 2 == 0) {
+      evenNumbers.push(numbersList[i]);
     }
-    return pares;
+  }
+  return evenNumbers;
 }
 
-console.log(pares([1, 2, 3, 4, 5, 6])) // [2, 4, 6]
-console.log(pares([])) // []
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
+console.log(findEvenNumbers([])); // []

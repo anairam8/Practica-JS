@@ -1,16 +1,16 @@
 // 29. Número de asteriscos en un arreglo
 // Escribir una función llamada numAsteriscos que reciba un arreglo y retorne el número de asteriscos
 
-function numAsteriscos(arreglo){
-    let contador=0;
-    for(let i=0; i<arreglo.length;i++){
-        if(arreglo[i] === "*"){
-            contador++;
-        }
+function countAsterisks(asteriskList) {
+  let asteriskCounter = 0;
+  for (let i = 0; i < asteriskList.length; i++) {
+    if (asteriskList[i] === "*") {
+      asteriskCounter++;
     }
-    return contador;
+  }
+  return asteriskCounter;
 }
 
-console.log(numAsteriscos(['', '*', '', '*'])) // 2
-console.log(numAsteriscos(['*', '*', '*'])) // 3
-console.log(numAsteriscos([])) // 0
+console.log(countAsterisks(["", "*", "", "*"])); // 2
+console.log(countAsterisks(["*", "*", "*"])); // 3
+console.log(countAsterisks([])); // 0

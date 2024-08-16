@@ -3,16 +3,16 @@
 
 // Nota: Intentarlo hacer sin el método Math.min de JavaScript.
 
-function min(numeros){
-    let minimo = numeros[0];
-    for(let i =0; i <numeros.length;i++){
-        if(numeros[i] < minimo){
-            minimo = numeros[i];
-        }
+function findMinimumNumber(numbers) {
+  let minimumNumber = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < minimumNumber) {
+      minimumNumber = numbers[i];
     }
-    return minimo;
+  }
+  return minimumNumber;
 }
 
-console.log(min([3, 9, 6])) // 3
-console.log(min([67, 35, 54, 26])) // 26
-console.log(min([5, 9, 2, 4, 5, 7])) // 2
+console.log(findMinimumNumber([3, 9, 6])); // 3
+console.log(findMinimumNumber([67, 35, 54, 26])); // 26
+console.log(findMinimumNumber([5, 9, 2, 4, 5, 7])); // 2

@@ -1,20 +1,20 @@
 // 25. Encontrar palabras que terminan en "s"
-// Escribir una función llamada terminanConS que reciba un arreglo de strings y retorne un nuevo arreglo con todas las palabras que terminan con "s" (mayúscula o minúscula).
+// Escribir una función llamada findWordsEndingInS que reciba un arreglo de strings y retorne un nuevo arreglo con todas las palabras que terminan con "s" (mayúscula o minúscula).
 
-function terminanConS(arreglo){
-    let termina_en_s= [];
-    for(let i=0; i < arreglo.length;i++){
-        let palabra= arreglo[i];
-        if(palabra.charAt(palabra.length - 1).toLowerCase() === 's'){
-            termina_en_s.push(palabra);
-        }
+function findWordsEndingInS(wordsList) {
+  let wordsListEndingInS = [];
+  for (let i = 0; i < wordsList.length; i++) {
+    let wordsList = wordsList[i];
+    if (word.charAt(word.length - 1).toLowerCase() === "s") {
+      wordsListEndingInS.push(word);
     }
-    return termina_en_s;
+  }
+  return wordsListEndingInS;
 }
 
-console.log(terminanConS(["pruebas", "arroz", "árbol", "tokens"])) // ["pruebas", "tokens"]
-console.log(terminanConS(["beta", "delta", "gama"])) // []
-console.log(terminanConS([])) // []
+console.log(findWordsEndingInS(["pruebas", "arroz", "árbol", "tokens"])); // ["pruebas", "tokens"]
+console.log(findWordsEndingInS(["beta", "delta", "gama"])); // []
+console.log(findWordsEndingInS([])); // []
 
 // palabra.charAt(palabra.length - 1):
 
